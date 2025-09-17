@@ -42,7 +42,7 @@
     "memory": "3072",
     "networkMode": "awsvpc",
     "placementConstraints": [],
-    "registeredAt": "2025-09-05T20:38:35.064Z",
+    "registeredAt": "2025-09-17T20:49:49.463Z",
     "registeredBy": "arn:aws:sts::379402500969:assumed-role/voclabs/user4337284=Test_Student",
     "requiresAttributes": [
         {
@@ -70,13 +70,13 @@
     "requiresCompatibilities": [
         "FARGATE"
     ],
-    "revision": 1,
+    "revision": 11,
     "runtimePlatform": {
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
     "status": "ACTIVE",
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:379402500969:task-definition/task-for-portfolio:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:379402500969:task-definition/task-for-portfolio:11",
     "taskRoleArn": "arn:aws:iam::379402500969:role/LabRole",
     "volumes": [],
     "tags": []
