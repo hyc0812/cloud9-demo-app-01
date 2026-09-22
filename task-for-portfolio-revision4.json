@@ -1,0 +1,62 @@
+{
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:107458816831:task-definition/task-for-portfolio:4",
+    "containerDefinitions": [
+        {
+            "name": "portfolio",
+            "image": "portfolio:latest",
+            "cpu": 0,
+            "portMappings": [
+                {
+                    "containerPort": 3000,
+                    "hostPort": 3000,
+                    "protocol": "tcp",
+                    "name": "portfolio-3000-tcp",
+                    "appProtocol": "http"
+                }
+            ],
+            "essential": true,
+            "environment": [],
+            "environmentFiles": [],
+            "mountPoints": [],
+            "volumesFrom": [],
+            "ulimits": [],
+            "systemControls": []
+        }
+    ],
+    "family": "task-for-portfolio",
+    "taskRoleArn": "arn:aws:iam::107458816831:role/PipelineRole",
+    "executionRoleArn": "arn:aws:iam::107458816831:role/PipelineRole",
+    "networkMode": "awsvpc",
+    "revision": 4,
+    "volumes": [],
+    "status": "ACTIVE",
+    "requiresAttributes": [
+        {
+            "name": "com.amazonaws.ecs.capability.task-iam-role"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+        },
+        {
+            "name": "ecs.capability.task-eni"
+        }
+    ],
+    "placementConstraints": [],
+    "compatibilities": [
+        "EC2",
+        "MANAGED_INSTANCES",
+        "FARGATE"
+    ],
+    "runtimePlatform": {
+        "cpuArchitecture": "X86_64",
+        "operatingSystemFamily": "LINUX"
+    },
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "1024",
+    "memory": "3072",
+    "registeredAt": "2026-09-22T20:52:50.673Z",
+    "registeredBy": "arn:aws:sts::107458816831:assumed-role/voclabs/user5435868=Test_Student",
+    "tags": []
+}
